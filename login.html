@@ -83,48 +83,48 @@ body, html {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -10; /* Keep the video behind other elements */
+  z-index: -10; 
 }
 
 .logo-container {
     position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    left: 10px; /* Adjust the left position as needed */
-    z-index: 999; /* Ensure the logo appears above other content */
+    top: 10px; 
+    left: 10px; 
+    z-index: 999; 
 }
 
-/* Logo link styles */
+
 .logo-link {
     display: block;
     text-decoration: none;
 }
 
 .company-logo {
-    position: absolute; /* Position the logo absolutely within the container */
-    top: 0; /* Place the logo at the top */
-    left: 0; /* Place the logo at the left */
-    width: 180px; /* Adjust the width as needed */
-    height: 28px; /* Adjust the height as needed */
-    z-index: 9999; /* Ensure the logo is above other content */
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 180px; 
+    height: 28px; 
+    z-index: 9999; 
 }
 
 .company-logo:hover {
-    opacity: 0.8; /* Reduce opacity on hover for a clickable effect */
+    opacity: 0.8; 
 }
 
 .content {
   position: relative;
   z-index: 10;
-  /* rest of your content styles */
+  
 }
 .page-header h1 {
   font-size: 38px;
-  color: #f3f5f3; /* Adjust text color to ensure visibility over the background */
-  margin-top: 20px; /* Reduce the top margin if it's too large */
-  margin-bottom: 20px; /* Reduce space between the header and the login box */
-  padding: 0; /* Adjust padding as needed */
+  color: #f3f5f3; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  padding: 0; 
   text-align: center;
-  letter-spacing: 1px; /* Stylistic choice for headers */
+  letter-spacing: 1px; 
   
   /* 3D effect */
   text-shadow: 
@@ -141,18 +141,18 @@ body, html {
     0 10px 10px rgba(0,0,0,0.2),
     0 20px 20px rgba(0,0,0,0.15);
   
-  /* Perspective */
-  transform: translateZ(0); /* For better 3D positioning */
-  perspective: 500px; /* Lower values for more extreme 3D effect */
+  
+  transform: translateZ(0); 
+  perspective: 500px; 
 }
 
-/* Adjust the overall page styling to accommodate the 3D text */
+
 .page-header {
   text-align: center;
-  margin: 0; /* Remove margin if not needed */
-  padding: 20px 0; /* Adjust padding to ensure the header is visible */
+  margin: 0; 
+  padding: 20px 0;
   position: relative;
-  overflow: hidden; /* To avoid scrolling due to the 3D effect */
+  overflow: hidden; 
 }
 
 
@@ -168,7 +168,7 @@ body, html {
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 380px; /* Adjust width as needed */
+  width: 380px; 
 }
 
 .tabs {
@@ -235,15 +235,15 @@ input[type="email"], input[type="password"] {
 .forgot-password {
   display: block;
   text-align: center;
-  margin-top: 10px; /* Reduced margin */
-  margin-bottom: 5px; /* Reduced margin */
+  margin-top: 10px; 
+  margin-bottom: 5px; 
 }
 .social-login {
   display: flex;
   flex-direction: column;
-  align-items: center; /* This will center the button in the flex container */
+  align-items: center; 
   justify-content: center;
-  text-align: center; /* This centers the text if needed */
+  text-align: center; 
   margin-top: 0px;
 }
 .register-form input[type="text"] {
@@ -254,10 +254,10 @@ input[type="email"], input[type="password"] {
   width: 100%;
 }
 
-/* Google button customization */
+
 .g-signin2 {
-  margin: 0 auto; /* This should already center the button */
-  display: block; /* This should be enough with the above margin */
+  margin: 0 auto; 
+  display: block; 
 }
 
 
@@ -273,7 +273,7 @@ input[type="email"], input[type="password"] {
   display: block;
 }
 
-/* Google button customization */
+
 .g-signin2 {
   margin: 0 auto;
   display: block;
@@ -311,7 +311,7 @@ input[type="email"], input[type="password"] {
   background-color: #357ae8;
 }
 
-/* Ensure that the Register tab content has the same base styling as the Login tab */
+
 #registerTab {
   padding: 20px 0;
 }
@@ -321,22 +321,22 @@ input[type="email"], input[type="password"] {
 */
 
 .guest-login-button {
-  background-color: #757575; /* Neutral color for guest login */
+  background-color: #757575; 
   color: white;
   padding: 10px 15px;
-  margin-top: 10px; /* Adjust margin to move button up */
-  margin-bottom: 20px; /* Add some space before the 'Or connect with' text */
+  margin-top: 10px;
+  margin-bottom: 20px; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  width: auto; /* Auto width to fit content */
-  display: inline-block; /* Align button inline with text */
+  width: auto;
+  display: inline-block; 
 }
 
 
 .guest-login-button:hover {
-  background-color: #43d41b; /* Darken the button a bit on hover for visual feedback */
+  background-color: #43d41b; 
 }
 
 </style>
@@ -367,15 +367,11 @@ function openTab(evt, tabName) {
             });
         });
 
-// Google Sign-In callback function
+
 function onSignIn(googleUser) {
-  // Get the user's profile information
-  // You can send this information to your server if needed
-  
-  // For example, you could retrieve the Google user's email
+
   var email = googleUser.getBasicProfile().getEmail();
-  
-  // (Optional) You might want to redirect the user or change the UI
+
 }
 </script>
 </body>
