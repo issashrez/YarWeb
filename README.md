@@ -1,1 +1,42 @@
 # YarWeb
+<h2>Objectives:</h2>
+<p>YarWeb is a unique tool that automatically generates generic YARA rules of a specific malware signature on a web-based platform. The objectives that this project aims to achieve or have already achieved are listed below:
+
+- <b>Web-based:</b> YarWeb’s front end is entirely built on HTML, CSS, and Javascript. Being web-based is easier to navigate and use when compared to Command-line-based tools.
+- <b>Login controls:</b> This is the only YARA-related tool in the market that has production-ready features like a login page. YarWeb ensures that users are allowed to create their profiles and their work is isolated from one another.
+- <b>Admin functionalities:</b> Adding to the production-ready environment, an admin has the capabilities to monitor other users and provide input.
+- <b>Rule Updation:</b> Rules created or existing in the database can be uploaded on YarWeb without a hassle.
+- <b>Portability:</b> Since the project is web-hosted, it is OS-independent and only minimal Python packages are needed for YarWeb to function.
+- <b>Fast processing:</b> YarWeb works on string matching and concatenation. This ensures that the YARA rule is produced within seconds.
+</p>
+<h2>How to use YarWeb: </h2>
+<h3>Python script:</h3>
+<p>final.py is the heart of YarWeb. It does all the backend and core functions including- concatenating strings, removing duplicates, formatting the subset into a YARA rule, testing the YARA rule using yara-python, storing user information, hashing the credentials, updating the YARA rule, conducting a succinct login process, and use third-party vendor support for malware scanning. 
+
+These Python packages are to be installed on the host device:
+<p align="center">
+<img src="https://i.imgur.com/NKqNspm.jpg" height="80%" width="80%"><br>
+Fig 1.1<br></p>
+</p>
+
+<h3>File setup:</h3>
+<p> 6 folders are to be available in the current working directory for YarWeb to function. These folders will be explained individually below:
+<p align="center">
+<img src="https://i.imgur.com/vkjBWJn.jpg" height="80%" width="80%"><br>
+Fig 1.2<br></p>
+<b>Instance</b> is a folder created by the script in association with the SQLAlchemy package. The purpose of this directory is to store a users.db file. This database file contains all the login information about the users who have registered on YarWeb. It is to be noted, that all the user-sensitive information such as passwords are encrypted/hashed before being stored in the database using the Python package bcyrpt.<br>
+
+<b>Malware_for_testing</b> is a folder that contains all the malware signature folders. Subsequently, these signature folders store malware samples of their own. These files are used to create the .csv files i.e. the database for rule creation.<br>
+
+<b>temp</b> is a folder that stores data only temporarily. This is primarily used whenever the user/admin has to perform an upload function. When the data is uploaded, it is stored in the temp folder for a short amount of time. When the task is completed, the file is automatically deleted from the folder.<br>
+
+<b>templates</b> this folder holds all the necessary HTML files for the front end of YarWeb. <br>
+
+<b>yara_files</b> is a folder that stores all the YARA rules produced from the interaction. The Python script ensures that if multiple users were to work on the same malware signature, only one YARA rule is stored in the directory. This is done to reduce duplicates and redundant YARA rules. Moreover, this directory is called upon at the time of rule updation. Strings from the user are concatenated to the chosen rule present in the directory, which successfully updates it.<br>
+
+Make sure that the .csv databases are not stored together in a folder of their own. If done so, changes would have to be made to the final.py script. The Python script should also be in the current working directory but not in a separate folder within the directory. An ideal setup would look like this:
+
+<p align="center">
+<img src="https://i.imgur.com/KETgnYO.jpg" height="80%" width="80%"><br>
+Fig 1.3<br></p>
+</p>
