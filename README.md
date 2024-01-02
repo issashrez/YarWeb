@@ -1,14 +1,4 @@
 # YarWeb
-<h2>Objectives:</h2>
-<p>YarWeb is a unique tool that automatically generates generic YARA rules of a specific malware signature on a web-based platform. The objectives that this project aims to achieve or have already achieved are listed below:
-
-- <b>Web-based:</b> YarWeb’s front end is entirely built on HTML, CSS, and Javascript. Being web-based is easier to navigate and use when compared to Command-line-based tools.
-- <b>Login controls:</b> This is the only YARA-related tool in the market that has production-ready features like a login page. YarWeb ensures that users are allowed to create their profiles and their work is isolated from one another.
-- <b>Admin functionalities:</b> Adding to the production-ready environment, an admin has the capabilities to monitor other users and provide input.
-- <b>Rule Updation:</b> Rules created or existing in the database can be uploaded on YarWeb without a hassle.
-- <b>Portability:</b> Since the project is web-hosted, it is OS-independent and only minimal Python packages are needed for YarWeb to function.
-- <b>Fast processing:</b> YarWeb works on string matching and concatenation. This ensures that the YARA rule is produced within seconds.
-</p>
 <h2>How to use YarWeb: </h2>
 <h3>Python script:</h3>
 <p>final.py is the heart of YarWeb. It does all the backend and core functions including- concatenating strings, removing duplicates, formatting the subset into a YARA rule, testing the YARA rule using yara-python, storing user information, hashing the credentials, updating the YARA rule, conducting a succinct login process, and use third-party vendor support for malware scanning. 
