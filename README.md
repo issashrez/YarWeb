@@ -32,5 +32,5 @@ Make sure that the .csv databases are not stored together in a folder of their o
 <img src="https://i.imgur.com/KETgnYO.jpg" height="80%" width="80%"><br>
 Fig 1.3<br></p>
 </p>
-<h2>How to use YarWeb: </h2>
+<h2>More about YarWeb: </h2>
 <p>To learn about YarWeb and how it functions, please refer to our published research paper in an esteemed international journal - https://eprajournals.com/IJSR/article/12429 </p>
